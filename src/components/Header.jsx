@@ -17,7 +17,7 @@ function NewPlantForm({ onAddPlant }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:6001/plants", {
+    fetch("http://localhost:5177/plants", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
